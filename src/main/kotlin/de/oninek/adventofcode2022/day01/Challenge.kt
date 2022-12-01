@@ -4,8 +4,7 @@ fun challenge01(input: String): Int {
    return input.split("\n\n")
         .map { s ->
             s.split('\n')
-                .map { it.toInt() }
-                .sum()
+                .sumOf { it.toInt() }
         }
         .max()
 }
